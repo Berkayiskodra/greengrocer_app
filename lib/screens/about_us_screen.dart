@@ -13,9 +13,9 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Hakkimizda'),
+          title: const Text('Hakkimizda'),
         ),
-        body: Center(
+        body: const Center(
           child: Text('Made by Berkay İşkodra'),
         ),
       ),

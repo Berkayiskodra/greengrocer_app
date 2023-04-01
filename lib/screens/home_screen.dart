@@ -1,7 +1,7 @@
 
 
 import 'package:flutter/material.dart';
-import '/screens/test_screen.dart';
+import 'users_screen.dart';
 import '/screens/about_us_screen.dart';
 import '/screens/categories_screen.dart';
 import '/screens/reports_screen.dart';
@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Manav'),
+          title: const Text('Manav'),
         ),
         body: Center(
           child: Column(
@@ -33,108 +33,90 @@ class _HomeScreenState extends State<HomeScreen> {
                 width: double.infinity,
                 alignment: Alignment.centerRight,
                 //color: Colors.orange
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('assets/images/cover.png'))
                 ),
               ),
     
-              Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    ElevatedButton(onPressed: (){
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  ElevatedButton(onPressed: (){
 
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => OrderScreen()),
-                    );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const OrderScreen()),
+                  );
 
-                    },child: Text('Sipariş'),)
-                  ],
-                ),
-
+                  },child: const Text('Sipariş'),)
+                ],
               ),
-              Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    ElevatedButton(onPressed: (){
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(onPressed: (){
 
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => ProductsScreen()),
-                    );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const ProductsScreen()),
+                  );
 
-                    },child: Text('Ürünler'),)
-                  ],
-                ),
-
+                  },child: const Text('Ürünler'),)
+                ],
               ),
 
-              Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    ElevatedButton(onPressed: (){
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(onPressed: (){
 
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => ReportsScreen()),
-                    );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const ReportsScreen()),
+                  );
 
-                    },child: Text('Raporlar'),)
-                  ],
-                ),
-
+                  },child: const Text('Raporlar'),)
+                ],
               ),
-              Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    ElevatedButton(onPressed: (){
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(onPressed: (){
 
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => CategoriesScreen()),
-                    );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const CategoriesScreen()),
+                  );
 
-                    },child: Text('Kategoriler'),)
-                  ],
-                ),
-
+                  },child: const Text('Kategoriler'),)
+                ],
               ),
-              Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    ElevatedButton(onPressed: (){
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(onPressed: (){
 
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => AboutUsScreen()),
-                    );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const AboutUsScreen()),
+                  );
 
-                    },child: Text('Hakkımızda'),)
-                  ],
-                ),
-
+                  },child: const Text('Hakkımızda'),)
+                ],
               ),
-              Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    ElevatedButton(onPressed: (){
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(onPressed: (){
 
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => TestScreen()),
-                    );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const TestScreen()),
+                  );
 
-                    },child: Text('Test'),)
-                  ],
-                ),
-
+                  },child: const Text('Kullanıcılar'),)
+                ],
               ),
             ]),
         ),

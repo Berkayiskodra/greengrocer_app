@@ -13,9 +13,9 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Kategori'),
+          title: const Text('Kategori'),
         ),
-        body: Center(
+        body: const Center(
           child: Text('Made by Berkay İşkodra'),
         ),
       ),

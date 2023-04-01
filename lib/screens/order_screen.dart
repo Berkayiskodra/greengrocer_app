@@ -13,9 +13,9 @@ class _OrderScreenState extends State<OrderScreen> {
      return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Sipariş'),
+          title: const Text('Sipariş'),
         ),
-        body: Center(
+        body: const Center(
           child: Text('Made by Berkay İşkodra'),
         ),
       ),
